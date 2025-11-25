@@ -1,0 +1,30 @@
+[project]
+name = "kiosk"
+version = "0.1.0"
+description = "AI Agent: FastAPI 기반 L1/L2 캐시 및 LLM 추론 모듈"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    # --- Core ---
+    "fastapi>=0.115.0",
+    "uvicorn>=0.38.0",
+    "python-dotenv>=1.0.1",
+    "pydantic>=2.8.2",
+
+    # --- Cache / Database ---
+    "redis>=5.0.8",
+    "cachetools>=5.3.3",
+
+    # --- NLP / LLM / Fuzzy Matching ---
+    "rapidfuzz>=3.9.6",
+    "openai>=1.44.0",     # GPT / embedding 테스트용
+    "google-genai>=0.7.0",     # Gemini LLM 호출용 SDK
+    "tiktoken>=0.7.0",    # LLM 토큰 처리용
+
+    # --- Optional Utilities ---
+    "httpx>=0.27.0",
+
+    "sounddevice",
+    "scipy",
+]

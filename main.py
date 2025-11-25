@@ -1,7 +1,7 @@
 from fastapi import FastAPI, UploadFile
 from cache.call_llm import agent_answer
 from cache.session import l1_snapshot_load
-from stt_tts.stt_openai import record_and_stt
+from stt.stt_openai import record_and_stt
 
 app = FastAPI(title="AI Agent", version="1.0.0")
 

@@ -1,4 +1,5 @@
 from fastapi import FastAPI, UploadFile
+from pydantic import BaseModel
 from cache.call_llm import agent_answer
 from cache.session import l1_snapshot_load
 # from stt.stt_openai import record_and_stt
